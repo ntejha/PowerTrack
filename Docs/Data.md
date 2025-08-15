@@ -10,6 +10,16 @@ CEA is the primary source of data, which is accurate operational metrics. Which 
 
 As this is the primary data, this is feeded to Ember, MoSPI and State boards.
 
+According to this reports,
+- Daily Data
+    - Daily Generation reports : 01, 02, 03, 04, 05, 17
+    - Daily Coal report : for fuel availability and supply demand correlation
+    - Outage Reports : 10, 10A, 11, 12, 13, 15
+- Monthly data
+    - Monthly Generation Report : for trend and sensonality analysis
+    - Transmission & Installed Capacity Reports
+
+[CEA data](https://npp.gov.in/publishedReports)
 [Link for CEA](https://cea.nic.in/?lang=en)
 
 ### Ember 

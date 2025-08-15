@@ -5,4 +5,4 @@ PowerTrack is a data-driven project aimed at monitoring and analyzing India's el
 ## How the project is going
 
  - [14-08-25] : Going to use mamba package manager because of its parallel downloading speed. Checkout how to use mamba in a basic level. [Link](Docs/Mamba.md).
- - [15-08-25] : Researched about the data sources, which can be used. found some, will start the the scrpaing soon. These are the data sources, Check it out : [Link](Docs/Data.md).
+ - [15-08-25] : Researched about the data sources, which can be used. These are the data sources, Check it out : [Link](Docs/Data.md). For scraping the CEA data, made a simple python script to the CEA data. when run the script it saves into two folder daily data and monthly data for CEA data only.

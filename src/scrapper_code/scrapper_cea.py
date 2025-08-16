@@ -6,8 +6,15 @@ from urllib.parse import urljoin
 
 BASE_URL = "https://npp.gov.in/publishedReports"
 
-os.makedirs("Daily", exist_ok=True)
-os.makedirs("Monthly", exist_ok=True)
+# 🔹 Change this to the folder path where you want to save files
+SAVE_PATH = "/home/ntejha/Projects/PowerTrack/data/raw/CEA"
+
+# Create Daily and Monthly subfolders inside SAVE_PATH
+daily_path = os.path.join(SAVE_PATH, "Daily")
+monthly_path = os.path.join(SAVE_PATH, "Monthly")
+
+os.makedirs(daily_path, exist_ok=True)
+os.makedirs(monthly_path, exist_ok=True)
 
 def sanitize_filename(name):
     """Remove invalid characters and format nicely."""
@@ -34,10 +41,11 @@ def scrape_site():
         if href.endswith(".xls") or href.endswith(".xlsx"):
             full_url = urljoin(BASE_URL, href)
 
+            # Decide the folder based on report type
             if "daily" in href.lower():
-                folder = "Daily"
+                folder = daily_path
             elif "monthly" in href.lower():
-                folder = "Monthly"
+                folder = monthly_path
             else:
                 continue
 
@@ -45,6 +53,7 @@ def scrape_site():
             p_tag = li_tag.find("p", class_="mp01") if li_tag else None
             title_text = p_tag.get_text(strip=True) if p_tag else "Report"
 
+            # Extract number + title if available
             match = re.match(r"(\d{2})\s*(.*)", title_text)
             if match:
                 index_number = match.group(1)

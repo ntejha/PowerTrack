@@ -19,7 +19,11 @@ According to this reports,
     - Monthly Generation Report : for trend and sensonality analysis
     - Transmission & Installed Capacity Reports
 
-[CEA data](https://npp.gov.in/publishedReports)
+01_All_India_Region_Wise_Power_generation_Overview
+- This file represents the daily and annual power generation overview for India, grouped by regions (Northern, Western, Southern, Eastern, North-Eastern, and All India) and energy types (Thermal, Nuclear, Hydro, RES, Bhutan Import). It includes the installed and monitored capacities of power plants, the scheduled (program) and actual electricity generated in million units (MU), and the deviation between planned and actual generation, both in absolute terms and percentage. Essentially, it provides a snapshot of how much electricity each region and energy type is expected to generate versus what was actually produced, helping track performance and monitor the energy mix.
+
+
+[CEA data](https://npp.gov.in/publishedReports), 
 [Link for CEA](https://cea.nic.in/?lang=en)
 
 ### Ember 

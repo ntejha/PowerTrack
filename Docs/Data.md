@@ -19,8 +19,7 @@ According to this reports,
     - Monthly Generation Report : for trend and sensonality analysis
     - Transmission & Installed Capacity Reports
 
-01_All_India_Region_Wise_Power_generation_Overview
-- This file represents the daily and annual power generation overview for India, grouped by regions (Northern, Western, Southern, Eastern, North-Eastern, and All India) and energy types (Thermal, Nuclear, Hydro, RES, Bhutan Import). It includes the installed and monitored capacities of power plants, the scheduled (program) and actual electricity generated in million units (MU), and the deviation between planned and actual generation, both in absolute terms and percentage. Essentially, it provides a snapshot of how much electricity each region and energy type is expected to generate versus what was actually produced, helping track performance and monitor the energy mix.
+The initial data consolidation process for the Powertrack project focuses on five key reports to build a robust data model from the ground up. This approach starts by cleaning the 01_All_India_Region_Wise_Power_generation_Overview file, which serves as a high-level summary of regional generation and capacity metrics. By then integrating the more granular data from three other critical reports, the project gains deep insights into grid performance and reliability. The 02 and 10 reports provide unit-level generation details and daily outage reasons, while the 12 report tracks long-term capacity issues. Finally, the 01_Daily_Coal_Report adds a vital layer of information on the fuel supply chain for thermal plants, completing the holistic view of the power sector.
 
 
 [CEA data](https://npp.gov.in/publishedReports), 

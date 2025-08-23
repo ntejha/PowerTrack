@@ -9,3 +9,4 @@ PowerTrack is a data-driven project aimed at monitoring and analyzing India's el
  - [16-08-25] : Thought of first consolidating the data of cea first, So, as of now importing and cleaning the data to usable format. As of now one done. Checkout the ipynb file for this [Notebook](src/transformations/cea_transformations.ipynb). Updated the data docs for better understanding.
  - [17-08-25] : Worked on the second file and cleaned it to a better format and restructured it to a good way. Thinking of first complete the cleaning of the daily generation and create a pipeline for the daily then jump to other data sources. You can see how i cleaned in the [Notebook](src/transformations/cea_transformations.ipynb).
  - [19-08-25] : Completed the Cleaning of data for the daily generation data.
+ - [23-08-25] : Choosen the schema and Architected it. Going to use PostgreSQL as database.

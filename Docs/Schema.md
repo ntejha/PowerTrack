@@ -119,6 +119,28 @@ CREATE TABLE fact_unit_long_outage (
     remarks TEXT
 );
 
+CREATE TABLE fact_coal_stock (
+    coal_id SERIAL PRIMARY KEY,
+    date_id INTEGER REFERENCES dim_date(date_id),
+    state_id INTEGER REFERENCES dim_state(state_id),
+    station_id INTEGER REFERENCES dim_power_station(station_id),
+    unit_id INTEGER REFERENCES dim_unit(unit_id),
+    classification VARCHAR(50),
+    mode_of_transport VARCHAR(50),
+    capacity_mw NUMERIC(10,2),
+    current_month_plf NUMERIC(5,2),
+    normative_days NUMERIC(5,2),
+    daily_requirement NUMERIC(12,2),
+    normative_stock NUMERIC(12,2),
+    actual_stock NUMERIC(12,2),
+    stock_percentage NUMERIC(5,2),
+    is_critical BOOLEAN,
+    receipt_today NUMERIC(12,2),
+    consumption_today NUMERIC(12,2),
+    remarks TEXT
+);
+
+
 ```
     
 
